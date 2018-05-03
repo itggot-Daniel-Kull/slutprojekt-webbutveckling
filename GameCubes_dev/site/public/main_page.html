@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|East+Sea+Dokdo|Roboto" rel="stylesheet"> 
     <title>GameCubes</title>
 </head>
 <body>
     <div class="all">
         <aside class="sidebar">
-            <div class="sidebar_icon_div">
-                <img src="" alt="Menu Icon">
+            <div class="sidebar_icon_div" onclick="toggleSidebar()">
+                <img src="img/test_file.png" alt="Menu Icon">
             </div>
             <div class="sidebar_content">
                 <a href="/how_to_play.html">
@@ -25,18 +25,25 @@
                 </a>
             </div>
         </aside>
-        <header class="titlebar">            
-            <h2 class="title">
+        <header class="titlebar">
+            <div class="header_icon" onclick="toggleSidebar()"></div>            
+            <h2 class="title" onclick="toggleOverlay()">
                 Gaming time
             </h2>
         </header>
         <div class="main_content">
-            <div class="image_part_container">
+            <div class="overlay">
+    <div class="overlay_container">
+        <div class="option_button button" onclick="alert('I am options yes!')">Options</div>
+        <div class="play_button button" onclick="toggleOverlay(); alert('Time to play....')">Play</div>
+        <div class="shuffle_button button" onclick="alert('Shuffling :D')">Shuffle</div>
+    </div>
+</div>
+
+<div class="image_part_container">
     <div class="empty_part part"></div>
     <div class="test_img part"></div>
-</div>
-<div class="option_button button" onclick="alert('I am options yes!')">Options</div>
-<div class="shuffle_button button" onclick="alert('Shuffling :D')">Shuffle</div>
+</div>
         </div>
     </div>
     <script src="js/toggle.js"></script>

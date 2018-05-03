@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|East+Sea+Dokdo|Roboto" rel="stylesheet"> 
     <title>GameCubes</title>
 </head>
 <body>
     <div class="all">
         <aside class="sidebar">
-            <div class="sidebar_icon_div">
-                <img src="" alt="Menu Icon">
+            <div class="sidebar_icon_div" onclick="toggleSidebar()">
+                <img src="img/test_file.png" alt="Menu Icon">
             </div>
             <div class="sidebar_content">
                 <a href="/how_to_play.html">
@@ -25,8 +25,9 @@
                 </a>
             </div>
         </aside>
-        <header class="titlebar">            
-            <h2 class="title">
+        <header class="titlebar">
+            <div class="header_icon" onclick="toggleSidebar()"></div>            
+            <h2 class="title" onclick="toggleOverlay()">
                 <%= @title %>
             </h2>
         </header>

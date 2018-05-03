@@ -1,0 +1,26 @@
+La till javascript.
+Ändrade namnet på sidebarens klasser till sidebar_*.
+Boxshadow.
+Ändrat alla units på sidan så att den ska fungera bättre.
+Skapade en kopia av projektet och tog bort css layouten för att börja om på nytt.
+Tog bort grid columns på .all eftersom jag inte kunde göra headern till 100vw utan att hela griddet följde med.
+Ändrade namnet på css klassen .show_sidebar till .show så att den kan användas generellt.
+La till toggle function för sidebaren.
+Justerade positionen av sidebaren.
+La till en icon med toggle funktionen i headern.
+Ändrade font-family och la till lite borders.
+Färdigställde layouten för hemsidan.
+
+Tänker ändra designen på innehållet till att 
+ha tre knappar i mitten av skärmen som täcker 
+spelet/main_content, Options Play/Continue Reset/shuffle.
+Dessa knappar ligger på en div som har 
+svart bakgrundsfärg med en låg alpha 
+så att man ser igenom den.
+
+Flyttade de tre knapparna till ett overlay som täcker det andra innehållet.
+Lyckades placera dem efter timmar av jobb. Hatar css och html.
+Skapade en toggleOverlay() funktion;
+Hittade Bug: När man aktiverar overlay animationen så 
+kan den fastana på ingen opacity och sedan hoppa fram utan en animation.
+La till toggleOverlay() på Play knappen.

@@ -1,0 +1,66 @@
+:root {
+    --borderthickness: 1px;
+    --border_color: rgb(215, 215, 215);
+    --color_dark: #005662;
+    --color_medium: #00838f;
+    --color_light: #4fb3bf;
+    --color_background: rgb(230, 240, 240);
+    --color_foreground: white;
+}
+
+
+
+// font-family: 'Roboto', sans-serif;
+// font-family: 'East Sea Dokdo', cursive;
+// font-family: 'Black And White Picture', sans-serif;
+
+body {
+    font-family: 'Black And White Picture', sans-serif;
+}
+
+.all {
+    background-color: var(--color_background);
+}
+
+.titlebar {
+    background-color: var(--color_dark);
+}
+
+.title {
+    color: white;
+}
+
+.sidebar {
+    background-color: var(--color_foreground);
+    border-right: var(--borderthickness, 2px) solid var(--border_color);
+}
+
+.sidebar_icon_div {
+    border-bottom: var(--borderthickness) solid var(--border_color);
+}
+
+.sidebar_content {
+    padding-left: 20px;
+}
+
+.sidebar_content a {
+    text-decoration: none;
+}
+
+.sidebar_content a p {
+    transition: 0.5s;
+    color: rgb(100, 100, 100);
+}
+
+.sidebar_content a p:hover {
+    transition: 0.2s;
+    color: black;
+    margin-left: 5px;
+}
+
+.button {
+    color: white;
+    background-color: rgb(189, 218, 255);
+    box-shadow: 
+            3px 3px rgba(255, 255, 255, .8);
+}
