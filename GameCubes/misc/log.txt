@@ -1,0 +1,14 @@
+Bytte från opacity till rgba på overlayen för att testa om problemet med transition kvarstod. 
+Både rgba och opacity har problem med transition. Den hoppar över transition när den går från visibility: hidden, till visibility: visible.
+
+La till en how to play sida. 
+Photoshopade en bild till how to play sidan.
+La till startsidan i sidebaren.
+Fixade problem med img som fastnade i botten av sidan.
+La till about sidan. 
+Photoshopade bild för skaparen av sidan.
+Skapade informations panel för skaparen.
+La till en "Show more..." text för att expandera texten för skaparen.
+La till javascript för att expandera texten.
+Fixade layouten för about page.
+Styleade about page.

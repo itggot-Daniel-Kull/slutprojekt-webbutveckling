@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|East+Sea+Dokdo|Roboto" rel="stylesheet"> 
+    <title>GameCubes</title>
+</head>
+<body>
+    <div class="all">
+        <aside class="sidebar">
+            <div class="sidebar_icon_div" onclick="toggleSidebar()">
+                <img src="img/test_file.png" alt="Menu Icon">
+            </div>
+            <div class="sidebar_content">
+                <a href="/main_page.html">
+                    <p>Gaming time</p>
+                </a>
+                <a href="/how_to_play.html">
+                    <p>How to play</p>
+                </a>
+                <a href="/stuff.html">
+                    <p>Stuff</p>
+                </a>
+                <a href="/about.html">
+                    <p>About</p>
+                </a>
+            </div>
+        </aside>
+        <header class="titlebar">
+            <div class="header_icon" onclick="toggleSidebar()"></div>            
+            <h2 class="title" onclick="toggleOverlay()">
+                About
+            </h2>
+        </header>
+        <div class="main_content">
+            <div class="about_div">
+    <aside class="creator">
+        <img src="img/steve.png" alt="The creator">
+        <h3>Steve nojobs</h3>
+        <p class="short_p">Age: 1 months</p>
+        <p class="short_p">Professions: Programmer, webserver programmer.</p>
+        <p class="show_more display" onclick="toggleCreatorText()">Show more...</p>
+        <p class="long_p">Steve has been working as a lead programmer for 
+            numerous websites and projects.
+             Steve had a rough childhood, it was not untill recently
+              he found the salvation in programming. His whole childhood had
+               been tormented by anxieties and phobias. His whole life was a rolercoaster
+                of fear "I feel like I've been trapped in a cage my whole life,
+                 but now I can do whatever I want". </p>
+    </aside>    
+    <div class="about_game">
+        
+    </div>
+</div>
+        </div>
+    </div>
+    <script src="js/toggle.js"></script>
+</body>
+</html>

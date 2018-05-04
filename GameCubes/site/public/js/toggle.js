@@ -20,3 +20,12 @@ function toggleOverlay() {
     element.classList.toggle("show");
     element.classList.toggle("overlay_anim");
 }
+
+function toggleCreatorText() {
+    var element = document.querySelector(".show_more");
+    element.classList.toggle("display");
+    element = document.querySelector(".long_p");
+    element.classList.toggle("show");
+    element = document.querySelector(".creator");
+    element.classList.toggle("expand");
+}

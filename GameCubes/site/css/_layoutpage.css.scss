@@ -7,6 +7,7 @@
     --sidebar_hide_pos: -400px;
     --button_text_size: 30px;
     --icon_size: 50px;
+    --margin-sides: 550px;
 }
 
 body {
@@ -51,7 +52,14 @@ body {
     float: left;
     width: var(--icon_size);
     height: var(--icon_size);
-    background-image: url("../img/test_file.png")
+    background-image: url("../img/test_file2.png")
+}
+
+.main_content {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr;
 }
 
 .button {

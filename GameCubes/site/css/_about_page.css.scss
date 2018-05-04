@@ -1,0 +1,45 @@
+.about_div {
+    display: grid;
+    grid-template-columns: var(--margin-sides) repeat(3, 1fr) var(--margin-sides);
+}
+
+.creator {
+    margin-left: auto;
+    background-color: white;
+    width: 300px;
+    height: 420px;
+}
+
+.creator * {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.creator p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.creator img {
+    width: 300px;
+    height: 200px;
+}
+
+.short_p{
+    font-size: 25px;
+}
+
+.show_more {
+    display: none;
+}
+
+.long_p {
+    visibility: hidden;
+    font-size: 20px;
+}
+
+.about_game {
+    grid-column: 2/5;
+    height: auto;
+}

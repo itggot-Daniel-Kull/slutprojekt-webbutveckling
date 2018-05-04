@@ -64,3 +64,18 @@ body {
     box-shadow: 
             3px 3px rgba(255, 255, 255, .8);
 }
+
+.about_div {
+    font-family: 'East Sea Dokdo', cursive;
+    // font-family: 'Roboto', sans-serif;
+}
+
+.show_more {
+    color: rgb(161, 161, 161);
+}
+
+.about_game {
+    background-color: var(--color_foreground);
+    border-right: 1px solid var(--color_light);
+    border-left: 1px solid var(--color_light);
+}
