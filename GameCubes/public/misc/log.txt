@@ -1,4 +1,0 @@
-La till javascript.
-Ändrade namnet på sidebarens klasser till sidebar_*.
-Boxshadow.
-Ändrat alla units på sidan så att den ska fungera bättre.

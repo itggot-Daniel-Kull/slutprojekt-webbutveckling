@@ -1,3 +1,12 @@
-.show_sidebar {
+.show {
     visibility: visible;
+}
+.sidebar_anim {
+    left: 0%;
+    transform: translate(0.5);
+    transition: 1s ease;
+}
+.overlay_anim {
+    transition: 0.5s;
+    opacity: 1;
 }
