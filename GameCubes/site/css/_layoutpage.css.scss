@@ -11,17 +11,22 @@
 }
 
 body {
+    position: static;
     margin: 0;
+    height: 100%;
+    width: 100%;
 }
 .all {
-    width: 100vw;
-    height: 100vh;
+    width: inherit;
+    min-height: 100vh;
+    height: inherit;
     display: grid;
-    grid-column: auto;
     grid-template-rows: var(--header_height) auto;
 }
 
 .titlebar {
+    position: fixed;
+    z-index: +2;
     width: inherit;
     grid-row: 1/2;
 }
@@ -35,7 +40,7 @@ body {
 .sidebar {
     visibility: hidden;
     position: fixed;
-    z-index: +3;
+    z-index: +4;
     width: var(--sidebar_max_width);
     height: inherit;
     transition: 0.5s ease 0s;
@@ -64,7 +69,7 @@ body {
 
 .button {
     width: 100px;
-    z-index: +2;
+    z-index: +3;
     padding: 40px;
     margin: 0;
     font-size: var(--button_text_size);

@@ -16,9 +16,6 @@
 
 body {
     font-family: 'Black And White Picture', sans-serif;
-}
-
-.all {
     background-color: var(--color_background);
 }
 
@@ -70,12 +67,23 @@ body {
     // font-family: 'Roboto', sans-serif;
 }
 
+.creator {
+    border: 1px solid var(--border_color);
+}
+
 .show_more {
     color: rgb(161, 161, 161);
 }
 
+.show_more:hover {
+    color: black;
+}
+
 .about_game {
     background-color: var(--color_foreground);
-    border-right: 1px solid var(--color_light);
-    border-left: 1px solid var(--color_light);
+}
+
+.about_game_title {
+    background-color: mediumvioletred;
+    color: white;
 }

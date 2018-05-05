@@ -8,9 +8,7 @@
   --color_foreground: white; }
 
 body {
-  font-family: 'Black And White Picture', sans-serif; }
-
-.all {
+  font-family: 'Black And White Picture', sans-serif;
   background-color: var(--color_background); }
 
 .titlebar {
@@ -49,13 +47,21 @@ body {
 .about_div {
   font-family: 'East Sea Dokdo', cursive; }
 
+.creator {
+  border: 1px solid var(--border_color); }
+
 .show_more {
   color: #a1a1a1; }
 
+.show_more:hover {
+  color: black; }
+
 .about_game {
-  background-color: var(--color_foreground);
-  border-right: 1px solid var(--color_light);
-  border-left: 1px solid var(--color_light); }
+  background-color: var(--color_foreground); }
+
+.about_game_title {
+  background-color: mediumvioletred;
+  color: white; }
 
 :root {
   --part_x: 5;
@@ -69,16 +75,21 @@ body {
   --margin-sides: 550px; }
 
 body {
-  margin: 0; }
+  position: static;
+  margin: 0;
+  height: 100%;
+  width: 100%; }
 
 .all {
-  width: 100vw;
-  height: 100vh;
+  width: inherit;
+  min-height: 100vh;
+  height: inherit;
   display: grid;
-  grid-column: auto;
   grid-template-rows: var(--header_height) auto; }
 
 .titlebar {
+  position: fixed;
+  z-index: +2;
   width: inherit;
   grid-row: 1/2; }
 
@@ -90,7 +101,7 @@ body {
 .sidebar {
   visibility: hidden;
   position: fixed;
-  z-index: +3;
+  z-index: +4;
   width: var(--sidebar_max_width);
   height: inherit;
   transition: 0.5s ease 0s;
@@ -115,7 +126,7 @@ body {
 
 .button {
   width: 100px;
-  z-index: +2;
+  z-index: +3;
   padding: 40px;
   margin: 0;
   font-size: var(--button_text_size);
@@ -166,9 +177,21 @@ body {
 
 .about_div {
   display: grid;
-  grid-template-columns: var(--margin-sides) repeat(3, 1fr) var(--margin-sides); }
+  grid-template-columns: var(--margin-sides) repeat(3, 1fr) var(--margin-sides);
+  grid-template-rows: 300px auto; }
+
+.about_background {
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh; }
+
+.placeholder {
+  grid-column: 1/6;
+  grid-row: 1/2; }
 
 .creator {
+  margin-top: 50px;
   margin-left: auto;
   background-color: white;
   width: 300px;
@@ -199,7 +222,21 @@ body {
 
 .about_game {
   grid-column: 2/5;
-  height: auto; }
+  grid-row: 2/3;
+  padding: 0 20px 0 20px; }
+
+.about_game p {
+  font-size: 25px; }
+
+.about_game_title {
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50px);
+  font-size: 30px;
+  width: 300px;
+  height: 75px;
+  text-align: center;
+  line-height: 0px; }
 
 .show {
   visibility: visible; }

@@ -1,9 +1,23 @@
 .about_div {
     display: grid;
     grid-template-columns: var(--margin-sides) repeat(3, 1fr) var(--margin-sides);
+    grid-template-rows: 300px auto;
+}
+
+.about_background {
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.placeholder {
+    grid-column: 1/6;
+    grid-row: 1/2;
 }
 
 .creator {
+    margin-top: 50px;
     margin-left: auto;
     background-color: white;
     width: 300px;
@@ -41,5 +55,21 @@
 
 .about_game {
     grid-column: 2/5;
-    height: auto;
+    grid-row: 2/3;
+    padding: 0 20px 0 20px;
+}
+
+.about_game p {
+    font-size: 25px;
+}
+
+.about_game_title {
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-50px);
+    font-size: 30px;
+    width: 300px;
+    height: 75px;
+    text-align: center;
+    line-height: 0px;
 }
