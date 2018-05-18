@@ -7,11 +7,14 @@
 .sidebar_anim {
     left: 0%;
     transform: translate(0.5);
-    transition: 1s ease;
+    transition: 0.5s ease;
 }
 .overlay_anim {
     opacity: 0.5;
 }
 .expand {
     height: 700px;
+}
+.h_expand {
+    height: 470px;
 }

@@ -43,13 +43,16 @@ body {
     z-index: +4;
     width: var(--sidebar_max_width);
     height: inherit;
-    transition: 0.5s ease 0s;
+    transition: 0.5s ease;
     left: var(--sidebar_hide_pos);
 }
 
-.sidebar_icon_div img{
+.sidebar_icon {
     float: right;
     margin: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/desktop/test_file.png);
 }
 
 .header_icon {
@@ -57,7 +60,7 @@ body {
     float: left;
     width: var(--icon_size);
     height: var(--icon_size);
-    background-image: url("../img/test_file2.png")
+    background-image: url("../img/desktop/test_file2.png")
 }
 
 .main_content {
@@ -75,4 +78,21 @@ body {
     font-size: var(--button_text_size);
     line-height: 50px;
     text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    :root {
+        --sidebar_max_width: 100vw;
+        --margin-sides: 0px;
+    }
+
+    .all {
+        width: 100%;
+        height: 100%;
+    }
+
+    .title {
+        margin: 0 0 0 100px;
+    }
 }

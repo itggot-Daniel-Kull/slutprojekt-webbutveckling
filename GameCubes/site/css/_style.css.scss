@@ -62,28 +62,28 @@ body {
             3px 3px rgba(255, 255, 255, .8);
 }
 
-.about_div {
+.t_div {
     font-family: 'East Sea Dokdo', cursive;
     // font-family: 'Roboto', sans-serif;
 }
 
-.creator {
+.t_mininote {
     border: 1px solid var(--border_color);
 }
 
-.show_more {
+.t_show_more {
     color: rgb(161, 161, 161);
 }
 
-.show_more:hover {
+.t_show_more:hover {
     color: black;
 }
 
-.about_game {
+.t_content {
     background-color: var(--color_foreground);
 }
 
-.about_game_title {
+.t_content_title {
     background-color: mediumvioletred;
     color: white;
 }

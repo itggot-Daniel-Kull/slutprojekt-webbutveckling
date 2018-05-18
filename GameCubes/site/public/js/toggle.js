@@ -13,6 +13,15 @@ function toggleSidebar() {
     var element = document.querySelector(".sidebar");
     element.classList.toggle("show");
     element.classList.toggle("sidebar_anim");
+    
+    if(element.classList.contains("show")) {
+        element = document.getElementById("0");
+        element.onclick = toggleSidebar;
+    } else {
+        element = document.getElementById("0");
+        element.onclick = function () {
+        };
+    }
 }
 
 function toggleOverlay() {
@@ -21,11 +30,11 @@ function toggleOverlay() {
     element.classList.toggle("overlay_anim");
 }
 
-function toggleCreatorText() {
-    var element = document.querySelector(".show_more");
+function toggleCreatorText(theClass) {
+    var element = document.querySelector(".t_show_more");
     element.classList.toggle("display");
-    element = document.querySelector(".long_p");
+    element = document.querySelector(".t_long_p");
     element.classList.toggle("show");
-    element = document.querySelector(".creator");
-    element.classList.toggle("expand");
+    element = document.querySelector(".t_mininote");
+    element.classList.toggle(theClass);
 }

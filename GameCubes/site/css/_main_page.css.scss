@@ -33,3 +33,25 @@
     display: block;
     margin: 100px 0 auto auto;
 }
+
+@media screen and (max-width: 600px) {
+    .overlay_container {
+        grid-column: 3/8;
+        grid-row: 1/6;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .option_button {
+        margin: 30px auto 10px auto;
+    }
+    
+
+    .play_button {
+        margin: 30px auto 10px auto;
+    }
+
+    .shuffle_button {
+        margin: 30px auto 10px auto;
+    }
+}
