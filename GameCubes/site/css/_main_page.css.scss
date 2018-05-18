@@ -1,9 +1,9 @@
 .overlay {
     transition: 0.5s;
     opacity: 0;
-    
-    grid-column: inherit;
-    grid-row: 1/2;
+    position: fixed;
+    width: 100%;
+    height: 93%;
     z-index: +1;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -34,7 +34,30 @@
     margin: 100px 0 auto auto;
 }
 
-@media screen and (max-width: 600px) {
+.sneaky {
+    position: absolute;
+    margin: 50vh 0 0 0;
+    width: 100px;
+    height: 50px;
+    transition: 0.5s;
+    display: block;
+}
+
+.sneaky:hover {
+    transform: scale(0.15);
+    box-shadow:
+            -200px -100px grey,
+            200px -100px grey,
+            250px 120px grey,
+            150px 170px grey,
+            50px 190px grey,
+            0px 200px grey, 
+            -250px 120px grey,
+            -150px 170px grey,
+            -50px 190px grey; 
+}
+
+@media screen and (max-width: 600px) , (max-width: 768px) and (orientation: landscape) {
     .overlay_container {
         grid-column: 3/8;
         grid-row: 1/6;
@@ -53,5 +76,9 @@
 
     .shuffle_button {
         margin: 30px auto 10px auto;
+    }
+
+    .sneaky {
+        display: none;
     }
 }

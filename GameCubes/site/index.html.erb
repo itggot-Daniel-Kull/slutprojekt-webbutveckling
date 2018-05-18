@@ -1,10 +1,14 @@
 <div class="overlay">
     <div class="overlay_container">
-        <div class="option_button button" onclick="alert('I am options yes!')">Options</div>
-        <div class="play_button button" onclick="toggleOverlay(); alert('Time to play....')">Play</div>
-        <div class="shuffle_button button" onclick="alert('Shuffling :D')">Shuffle</div>
+        <div class="option_button button" onclick="console.log('I am options yes!')">Options</div>
+        <div class="play_button button" onclick="toggleOverlay(); console.log('Time to play....')">Play</div>
+        <div class="shuffle_button button" onclick="shuffle()">Shuffle</div>
+        <div class="sneaky button" onclick="add(100)"></div>
     </div>
 </div>
+
+<Canvas></Canvas>
+<script src="/js/canvas.js"></script>
 
 <div class="image_part_container">
     <div class="empty_part part"></div>

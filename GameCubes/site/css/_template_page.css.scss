@@ -9,6 +9,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
+    background: url(/img/desktop/Mountain-Scenery.png)
 }
 
 .t_placeholder {
@@ -74,8 +75,20 @@
     line-height: 0px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) , (max-width: 768px) and (orientation: landscape) {
+    .t_background {
+        background: url(/img/mobile/Mountain-Scenery.png)
+    }
+
     .t_mininote {
         display: none;
+    }
+
+    .t_div {
+        grid-template-rows: 220px auto;
+    }
+
+    .t_content_title {
+        font-size: 180%;
     }
 }

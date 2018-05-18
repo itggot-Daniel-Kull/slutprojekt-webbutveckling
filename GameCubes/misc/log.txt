@@ -1,4 +1,4 @@
+Telefon: Iphone 6s
+
 Ska göra-.....--.-.-
-* Lägg in alla bilder i ett sprite sheet
-* Lägg till bilder för telefonen i sprite sheet
-* Lägg in random bilder i ett spritesheet, dela upp dem i stuff hemsidan som exempel bilder.
+Optionellt: Options meny
